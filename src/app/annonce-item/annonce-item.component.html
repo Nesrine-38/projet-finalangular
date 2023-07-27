@@ -1,0 +1,8 @@
+<article>
+  <h3><a routerLink="/annonce/{{annonce.id}}">{{annonce.titre}}</a> <button (click)="buttonPressed()">x</button></h3>
+  <img class="image" *ngIf="annonce.photos" src={{annonce.photos}} [alt]="annonce.description">
+  <p>{{annonce.date|date}}</p>
+
+
+</article>
+

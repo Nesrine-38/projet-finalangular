@@ -1,0 +1,35 @@
+
+<form (ngSubmit)="handleSubmit()">
+  <div class="mb-3">
+      <label for="title">Title</label>
+      <input type="text" name="title" id="title" [(ngModel)]="annonce.titre">
+  </div>
+  <div class="mb-3">
+      <label for="date">date</label>
+      <input type="date" name="date" id="date" [(ngModel)]="annonce.date">
+  </div>
+
+  <div class="mb-3">
+      <label for="photos">photos</label>
+      <input type="text" name="photos" id="photos" [(ngModel)]="annonce.photos" (change)="handleImage($event)">
+  </div>
+
+  <div class="mb-3">
+    <label for="status">status</label>
+    <input type="text" name="status" id="status" [(ngModel)]="annonce.status">
+</div>
+
+<div class="mb-3">
+  <label for="categories">categories</label>
+  <input name="categories" id="categories" [(ngModel)]="annonce.categories" >
+</div>
+<div class="mb-3">
+  <label for="utilisateur">utilisateur</label>
+  <input name="utilisateur" id="utilisateur" [(ngModel)]="annonce.utilisateur" >
+</div>
+  <div class="mb-3">
+      <label for="description">description</label>
+      <textarea name="description" id="description" [(ngModel)]="annonce.description" ></textarea>
+  </div>
+  <button type="submit" class="btn bold">Submit</button>
+</form>
