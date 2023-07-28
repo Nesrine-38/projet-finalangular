@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Annonce } from 'entities';
+import { Annonce, Utilisateur } from 'entities';
 import { AnnonceService } from '../annonce.service';
 
 @Component({
@@ -9,6 +9,7 @@ import { AnnonceService } from '../annonce.service';
 })
 export class AccueilComponent implements OnInit{
   list:Annonce[] = [];
+  utilisateur:Utilisateur;
 
   constructor(private annonceservice:AnnonceService){}
 
@@ -16,8 +17,9 @@ export class AccueilComponent implements OnInit{
     this.annonceservice.fetchAll().subscribe(data => this.list = data['hydra:member']);
   }
 
-  toList(annonce:Annonce) {
-    this.annonceservice.add(annonce).subscribe(data => this.list.push(data));
+  toList(annonce:Annonce, utilisateur:Utilisateur) {
+    this.annonceservice.add(annonce).subscribe(data => this.list.push(data)
+  );
   }
 
   removeAnnonce(annonce:Annonce) {

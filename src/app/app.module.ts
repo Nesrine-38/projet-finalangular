@@ -11,6 +11,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ListUtilisateurComponent } from './list-utilisateur/list-utilisateur.component';
+import { UtilisateurAnnonceComponent } from './utilisateur-annonce/utilisateur-annonce.component';
+import { FormEmpruntComponent } from './form-emprunt/form-emprunt.component';
+import { ListEmpruntComponent } from './list-emprunt/list-emprunt.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +25,11 @@ import { FooterComponent } from './footer/footer.component';
     FormAnnonceComponent,
     AnnonceItemComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ListUtilisateurComponent,
+    UtilisateurAnnonceComponent,
+    FormEmpruntComponent,
+    ListEmpruntComponent,
   ],
   imports: [
     BrowserModule,

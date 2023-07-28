@@ -18,7 +18,6 @@ export class SingleAnnonceComponent implements  OnInit {
       this.annonceservice.fetchOne(params['id']).subscribe(data => this.annonce = data)
     );
   }
-
   updateAnnonce(id:number,annonce:Annonce) {
     this.annonceservice.update(id,annonce).subscribe(data => {this.annonce = data; this.editing = false;});
   }

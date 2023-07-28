@@ -1,5 +1,5 @@
 <div class="container">
 <h1>liste des annonces</h1>
 <app-annonce-item [annonce]="item" (delete)="removeAnnonce($event)" *ngFor="let item of list" />
-<app-form-annonce (added)="toList($event)"/>
+<app-form-annonce (added)="toList($event, utilisateur)"/>
 </div>

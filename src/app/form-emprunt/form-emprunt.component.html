@@ -1,0 +1,14 @@
+<form>
+
+  <div class="mb-3">
+    <label for="date-debut">Date debut </label>
+    <input type="date" name="date" id="date" [(ngModel)]="emprunt.date_debut">
+  </div>
+
+  <div class="mb-3">
+    <label for="date-fin">date fin</label>
+    <input type="date" name="date-fin" id="date-fin" [(ngModel)]="emprunt.date_fin">
+  </div>
+
+  <button type="submit" class="btn bold">Demander l'emprunt</button>
+</form>

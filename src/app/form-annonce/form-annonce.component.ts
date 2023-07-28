@@ -8,7 +8,13 @@ import { Annonce } from 'entities';
 })
 export class FormAnnonceComponent {
   @Input()
-  annonce:Annonce = {description: '', categories:'', date:'', status: '',photos:'',titre:'',utilisateur:''};
+  annonce:Annonce = {description: '', categories:'', date:'', status: '',photos:'',titre:'',utilisateur: {
+    nom: '',
+    adresse: '',
+    email: '',
+    telephone: '',
+    role: ''
+  }};
 
   @Output()
   added = new EventEmitter<Annonce>();

@@ -1,0 +1,8 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body" *ngFor="let item of list">
+    <h5 class="card-title">{{ item.date_debut |date:'dd/MM/yyyy'}}</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">{{item.date_fin |date:'dd/MM/yyyy'}}</h6>
+    <p class="card-text">{{item.utilisateur}}</p>
+    <p class="card-text">{{item.annonce}}</p>
+  </div>
+</div>

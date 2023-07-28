@@ -1,0 +1,13 @@
+<div *ngIf="utilisateur">
+  <h2>{{ utilisateur.nom }}</h2>
+  <p>Email: {{ utilisateur.email }}</p>
+  <p>Téléphone: {{ utilisateur.telephone }}</p>
+
+  <h3>Annonces de {{ utilisateur.nom }}</h3>
+  <ul>
+    <li *ngFor="let annonce of annonces">
+      <p>{{ annonce.titre }}</p>
+      <p>{{ annonce.description }}</p>
+    </li>
+  </ul>
+</div>

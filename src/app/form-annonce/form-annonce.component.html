@@ -24,8 +24,28 @@
   <input name="categories" id="categories" [(ngModel)]="annonce.categories" >
 </div>
 <div class="mb-3">
-  <label for="utilisateur">utilisateur</label>
-  <input name="utilisateur" id="utilisateur" [(ngModel)]="annonce.utilisateur" >
+  <label for="nom">Nom</label>
+  <input type="text" name="nom" id="nom" [(ngModel)]="annonce.utilisateur.nom">
+</div>
+
+<div class="mb-3">
+  <label for="adresse">Adresse</label>
+  <input type="text" name="adresse" id="adresse" [(ngModel)]="annonce.utilisateur.adresse">
+</div>
+
+<div class="mb-3">
+  <label for="email">Email</label>
+  <input type="email" name="email" id="email" [(ngModel)]="annonce.utilisateur.email">
+</div>
+
+<div class="mb-3">
+  <label for="telephone">Téléphone</label>
+  <input type="text" name="telephone" id="telephone" [(ngModel)]="annonce.utilisateur.telephone">
+</div>
+
+<div class="mb-3">
+  <label for="role">Role</label>
+  <input type="text" name="role" id="role" [(ngModel)]="annonce.utilisateur.role">
 </div>
   <div class="mb-3">
       <label for="description">description</label>

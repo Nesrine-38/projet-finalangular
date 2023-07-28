@@ -1,11 +1,3 @@
-export interface Utilisateur{
-  id?:number;
-  nom:string;
-  adresse:string;
-  email:string;
-  telephone:string;
-  role?:string;
-}
 
 export interface Annonce{
   id?:number;
@@ -15,8 +7,15 @@ export interface Annonce{
   status:string;
   photos:string;
   titre:string;
-  utilisateur:string;
-
+  utilisateur:Utilisateur;
+}
+export interface Utilisateur{
+  id?:number;
+  nom:string;
+  adresse:string;
+  email:string;
+  telephone:string;
+  role?:string;
 }
 
 export interface Emprunt{
@@ -24,7 +23,7 @@ export interface Emprunt{
   date_debut:string;
   date_fin:string;
   status:string;
-  utilisateur:string;
+  utilisateur:Utilisateur;
   annonce:string;
 }
 
